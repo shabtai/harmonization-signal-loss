@@ -98,7 +98,7 @@ Over the past months I built test datasets designed to make a fresh model fail. 
 | Hospital data with hidden defects (synthetic), 4 versions | Undocumented training accounts, a UTC time column, a sign flip, a gap before a system went live read as zero, summary rows mixed with detail rows, duplicate accounts | Every planted defect found, in all 4 versions |
 | Analysis code with planted bugs, 5 rounds | 23 planted defects, for example an alias table with 89 spellings of 47 agencies that the code never applied | 0 of 23 defects survived review |
 
-Unreadable to a human is not necessarily unreadable to a model. The bottleneck is no longer whether the model can read the raw data.
+Messy data, non-standard codes and low-signal names did not stop the models. The bottleneck is no longer whether the model can read the raw data.
 
 The models did fail in some tests, but never because the data were messy. The failures came from three other causes: a definition that existed nowhere in the data (when a side effect counts as caused by treatment), an open question with no stated rule (the model chose one disease variant out of three), and a written procedure that was out of date and that the model obeyed against the data. Harmonizing the data would have fixed none of these.
 
