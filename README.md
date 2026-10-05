@@ -1,4 +1,4 @@
-# Is unclean data the real problem—or is it the opposite?
+# Is unclean data the real problem? Or maybe it's the other way round
 
 Oct 5, 2026 · Ran Tene
 
