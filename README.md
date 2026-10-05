@@ -119,6 +119,5 @@ In this model, the question is no longer how to clean the data once for everyone
 
 1. Calonaci N. et al. Gene mutant dosage is associated with prognosis and metastatic tropism in 60,000 clinical cancer samples. Nature Genetics (2026). Preprint: medRxiv 2024.05.13.24307238.
 2. Nguyen B. et al. Genomic characterization of metastatic patterns from prospective clinical sequencing of 25,000 patients. Cell (2022). Data: MSK-MET 2021, cBioPortal.
-3. Chen et al. npj Precision Oncology 10:34 (2026). doi 10.1038/s41698-025-01227-7.
-4. INCOMMON analysis code: `scripts/1.1.prepare_msk_met.R`, line 91; `scripts/4.survival_analysis.R`.
-5. Reproduction code and outputs: [github.com/shabtai/incommon-merge-check](https://github.com/shabtai/incommon-merge-check).
+3. INCOMMON analysis code: `scripts/1.1.prepare_msk_met.R`, line 91; `scripts/4.survival_analysis.R`.
+4. Reproduction code and outputs: [github.com/shabtai/incommon-merge-check](https://github.com/shabtai/incommon-merge-check).
