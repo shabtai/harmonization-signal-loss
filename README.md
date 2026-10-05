@@ -18,14 +18,7 @@ Harmonization and curation do more than consume years of work. They can erase di
 2. **Data judged not ready.** Sources that are not yet harmonized are excluded before the analysis starts.
 3. **Data lost in curation.** In the data that is curated, merges and mappings erase distinctions that carry signal.
 
-Section 1 shows one published case of the third loss: a single merge, with no failed step and no warning.
-
-The note has two parts:
-
-1. A recent published example in which one harmonization step changed a main result.
-2. Results from my tests of current models on many kinds of broken, unharmonized data.
-
-The conclusion describes what this means for data work and pipelines.
+Below I show two things. First, a published study where one merge erased real signal, with no failed step and no warning. Second, my tests of current models on messy, unharmonized data. I end with what this means for data work.
 
 ## 1. Case study: one merge in a published survival analysis
 
