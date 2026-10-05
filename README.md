@@ -4,7 +4,7 @@ Oct 5, 2026 · Ran Tene
 
 Pharma and clinical research still spend years building a common data layer: mapping codes, merging categories, standardizing names and resolving differences between sources. Then maintaining it as the sources and standards change.
 
-The assumption is that models cannot analyse the data reliably until this work is complete.
+The assumption is that this work is the gap between the data and reliable use of AI: models cannot analyse the data reliably until it is complete.
 
 My intensive benchmarks challenge that assumption. I tested current AI agents (Claude Opus 5.5 and Astra 6) on raw data with mixed codes, inconsistent names, unit changes, split identities, conflicting sources and planted defects. I tried to make them fail on those defects. I did not succeed.
 
