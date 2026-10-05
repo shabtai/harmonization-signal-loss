@@ -1,4 +1,4 @@
-# Is data that is not clean or normalized a problem? Or maybe it's the other way round
+# Is unclean data the real problem—or is it the opposite?
 
 Oct 5, 2026 · Ran Tene
 
