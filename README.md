@@ -85,7 +85,22 @@ In the ovarian group, 81% of TP53 wild-type samples are not high-grade serous, s
 
 Harmonize-first made sense when fixed code read the data, because a script cannot decide what an unfamiliar code means. Early language models did not remove this need. On tabular data they made many errors, and these errors were silent and hard to find.
 
-This has changed. In the benchmarks described above, the few errors left were small, and a set of semantic preprocessing rules can reduce them further. The main point is that current models read messy data correctly without a harmonized copy.
+This has changed. Modern models do not appear to require human-readable data.
+
+Over the past months I built test datasets designed to make a fresh model fail. Each had a known answer, fixed before the model saw the data. The model got only the raw files and the question, with no cleaned copy, no data dictionary and no hints. Some of the results:
+
+| Test data | What made it hard | Result |
+| --- | --- | --- |
+| Rare-disease carrier cohort (synthetic), 100,000 patients, 294 files, 4.5M rows | Genotype files in 3 layouts and 3 nomenclatures; ICD-9, ICD-10 and local codes; drug brand names and trial codes; a unit switch to pmol/L; retired patient-ID links; an ID collision between two sites; a stale consent export | 144 of 144 patients found, 0 false, 4.4 minutes |
+| Same cohort, opaque version: 393 files, 5.8M rows | Every folder, file, column and code replaced by a neutral name (d01, t0042, c07, random codes). Meanings recoverable only from biology | Precision 96%, recall 97%, 13 minutes. It decoded the variant probes, the drug codes and the unit switch |
+| Clinical safety database (synthetic Phase III), 300 tables | Tables named tbl\_0001 to tbl\_0300, every column renamed c01, c02 …; 294 noise tables over the same subjects; a stale, truncated decoy extract | Found the decoy in every run. Recovered the six regulatory seriousness criteria from flag frequencies alone |
+| Free-text clinical notes, 20,000 patients, 696,000 rows | About 57,000 diagnosis mentions rewritten in free language; near misses such as one-sided findings, refuted tests and family history | 156 of 156 patients, 0 false, 8 minutes |
+| Hospital data with hidden defects (synthetic), 4 versions | Undocumented training accounts, a UTC time column, a sign flip, a gap before a system went live read as zero, summary rows mixed with detail rows, duplicate accounts | Every planted defect found, in all 4 versions |
+| Analysis code with planted bugs, 5 rounds | 23 planted defects, for example an alias table with 89 spellings of 47 agencies that the code never applied | 0 of 23 defects survived review |
+
+Unreadable to a human is not necessarily unreadable to a model. The bottleneck is no longer whether the model can read the raw data.
+
+The models did fail in some tests, but never because the data were messy. The failures came from three other causes: a definition that existed nowhere in the data (when a side effect counts as caused by treatment), an open question with no stated rule (the model chose one disease variant out of three), and a written procedure that was out of date and that the model obeyed against the data. Harmonizing the data would have fixed none of these.
 
 So the main reason for harmonize-first no longer holds in the same way. The cost shown in Section 1 remains.
 
