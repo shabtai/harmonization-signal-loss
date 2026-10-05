@@ -10,18 +10,16 @@ My intensive benchmarks challenge that assumption. I tested current AI agents (C
 
 Within the tasks I tested, a permanently harmonized copy was not a prerequisite for reliable analysis.
 
-Harmonization and curation do more than consume years of work. They can erase distinctions that carry scientific signal. When analysis accepts only harmonized data, sources that have not been harmonized are excluded before the analysis even starts.
+Apart from the massive engineering effort, there is another cost. Most of the signal in the data never reaches the analysis. It is lost in three ways:
 
-**The loss is not minor.** In my experience, most of the signal in the data never reaches the analysis. It is lost in three ways:
-
-1. **Data I could not curate.** Sources that were too costly or too complex to map are left out.
+1. **Data that could not be curated.** Sources that were too costly or too complex to map are left out.
 2. **Data judged not ready.** Sources that are not yet harmonized are excluded before the analysis starts.
 3. **Data lost in curation.** In the data that is curated, merges and mappings erase distinctions that carry signal.
 
-Below I test both sides of the question:
+So I tested both sides: what data cleanup loses, and what it gains.
 
-- **Does harmonization lose signal?** A published study where one merge erased real signal, with no failed step and no warning.
-- **Is unclean data a problem for current models?** My tests of current models on messy, unharmonized data.
+- **What is lost?** A published study where one merge erased real signal, with no failed step and no warning.
+- **What is gained?** My tests of current models on messy, unharmonized data.
 
 I end with what this means for data work.
 
