@@ -18,7 +18,12 @@ Harmonization and curation do more than consume years of work. They can erase di
 2. **Data judged not ready.** Sources that are not yet harmonized are excluded before the analysis starts.
 3. **Data lost in curation.** In the data that is curated, merges and mappings erase distinctions that carry signal.
 
-Below I show two things. First, a published study where one merge erased real signal, with no failed step and no warning. Second, my tests of current models on messy, unharmonized data. I end with what this means for data work.
+Below I test both sides of the question:
+
+- **Does harmonization lose signal?** A published study where one merge erased real signal, with no failed step and no warning.
+- **Is unclean data a problem for current models?** My tests of current models on messy, unharmonized data.
+
+I end with what this means for data work.
 
 ## 1. Case study: one merge in a published survival analysis
 
